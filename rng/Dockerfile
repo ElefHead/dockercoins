@@ -1,4 +1,4 @@
-FROM python:3.6-alpine
+FROM python:3-slim
 RUN pip install Flask
 COPY rng.py /
 CMD ["python", "rng.py"]
